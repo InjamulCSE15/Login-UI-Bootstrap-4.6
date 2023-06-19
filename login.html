@@ -35,7 +35,7 @@
                                         <label>User Name</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="input" id="" name="password" required>
+                                        <input type="password" class="input" id="userPassword" name="password" required>
                                         <label>password</label>
                                     </div>
                                     <div class="form-check">
@@ -56,5 +56,16 @@
         </div>
       </div>
   </section>
+  <script>
+   const checkbox = document.getElementById('showPass')
+   var passWord  = document.getElementById('userPassword');
+checkbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    passWord.setAttribute('type', 'text');
+  } else {
+    passWord.setAttribute('type', 'password');
+  }
+})
+  </script>
 </body>
 </html>

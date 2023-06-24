@@ -1,71 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <!-- Bootstrap v4.6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Required CSS -->
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Bootstrap v4.6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+    integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Required CSS -->
+  <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    
+
   <section class="myform-area">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
 
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                      <div class="col-md-6">
-                          <img src="https://img.freepik.com/free-vector/manager-with-checklist-creating-event-plan-development-event-management-planning-service-how-plan-event-planning-software-concept-pinkish-coral-bluevector-isolated-illustration_335657-1351.jpg" class="img-fluid" alt="...">
-                        <div class="p-2 text-center">
-                            <h6>Welcome to</h6>
-                            <h5>Event Management System</h5>
-
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                            <div class="form-input">
-                                <h2 class="text-center">Login</h2>
-                                <div>
-                                    <div class="form-group">
-                                        <input type="text"  class="input" id="" name="name" required>
-                                        <label>User Name</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="input" id="userPassword" name="password" required>
-                                        <label>password</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="showPass">
-                                        <label class="form-check-label" for="showPass">
-                                            Show Password </label>
-                                    </div>
-                                    <div class="myform-button">
-                                        <button class="myform-btn">Login</button>
-                                    </div>
-                                </div>
-                            </div>
-                      </div>
-                    </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img
+                  src="https://img.freepik.com/free-vector/manager-with-checklist-creating-event-plan-development-event-management-planning-service-how-plan-event-planning-software-concept-pinkish-coral-bluevector-isolated-illustration_335657-1351.jpg"
+                  class="img-fluid" alt="...">
+                <div class="p-2 text-center">
+                  <h6>Welcome to</h6>
+                  <h5>Event Management System</h5>
+                  <p class="text-secondary lead">Please login your account</p>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-input">
+                  <h2 class="text-center">Login</h2>
+                  <div>
+                    <div class="form-group">
+                      <input type="text" class="input" id="" name="name" required>
+                      <label>User Name</label>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="input" id="userPassword" name="password" required>
+                      <label>password</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="showPass">
+                      <label class="form-check-label" for="showPass">
+                        Show Password </label>
+                    </div>
+                    <div class="myform-button">
+                      <button class="myform-btn">Login</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            
+          </div>
         </div>
+
       </div>
+    </div>
   </section>
+  <!-- Required JS-->
   <script>
-   const checkbox = document.getElementById('showPass')
-   var passWord  = document.getElementById('userPassword');
-checkbox.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    passWord.setAttribute('type', 'text');
-  } else {
-    passWord.setAttribute('type', 'password');
-  }
-})
+    const checkbox = document.getElementById('showPass')
+    var passWord = document.getElementById('userPassword');
+    checkbox.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        passWord.setAttribute('type', 'text');
+      } else {
+        passWord.setAttribute('type', 'password');
+      }
+    })
   </script>
 </body>
 </html>
